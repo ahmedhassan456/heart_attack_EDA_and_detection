@@ -15,6 +15,7 @@ def predict():
     if request.method == 'POST':
         inputs = request.form.to_dict()
         prediction = GetPredictions(model, inputs)
+        print(f"Prediction-------------------- = {prediction}")
 
         return render_template('result.html', prediction=prediction)
 
