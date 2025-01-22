@@ -24,9 +24,4 @@ def GetPredictions(model, inputs):
 
     prediction = model.predict([df.to_numpy()[0]])[0]
 
-    result = {
-        0: "A Heart Attack is unlikely",
-        1: "A Heart Httack may occur",
-    }
-
-    return result[prediction]
+    return prediction
