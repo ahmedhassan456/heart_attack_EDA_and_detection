@@ -6,3 +6,5 @@ scikit-learn==1.2.2
 imbalanced-learn==0.12.4
 optuna==4.1.0
 xgboost==2.0.3
+flask==3.1.0
+gunicorn==23.0.0
